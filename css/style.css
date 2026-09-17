@@ -1,0 +1,25 @@
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 80px; }
+
+/* Carousel: sembunyikan scrollbar, snap per slide */
+#carouselTrack { scrollbar-width: none; }
+#carouselTrack::-webkit-scrollbar { display: none; }
+#carouselTrack > article { scroll-snap-align: center; }
+
+/* Tombol filter kategori */
+.filter-btn {
+  font-size: 0.8rem; font-weight: 700;
+  border: 1px solid rgba(107, 66, 38, .3); color: #6B4226;
+  border-radius: 9999px; padding: .35rem 1rem; background: #fff;
+}
+.filter-btn.active { background: #6B4226; color: #FFF8F0; }
+
+/* Tab admin */
+.admin-tab {
+  border: 1px solid rgba(107, 66, 38, .3); color: #6B4226;
+  border-radius: 9999px; padding: .35rem 1.1rem; background: #FFF8F0;
+}
+.admin-tab.active { background: #F5A623; border-color: #F5A623; color: #4E2E18; }
+
+/* Kartu menu: foto seragam */
+.menu-photo { aspect-ratio: 1 / 1; object-fit: cover; }

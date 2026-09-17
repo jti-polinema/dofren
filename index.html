@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dofren — Friend Donat dan Bakery | Produsen Donat Premium dan Ekonomis Malang</title>
+  <meta name="description" content="Dofren — Friend Donat dan Bakery. Produsen Donat Premium dan Ekonomis Malang. Lihat menu & pricelist, pesan via GoFood, ShopeeFood, GrabFood, atau WA Bisnis." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dofren — Friend Donat dan Bakery" />
+  <meta property="og:description" content="Produsen Donat Premium dan Ekonomis Malang. Pesan via GoFood / ShopeeFood / GrabFood / WA." />
+  <meta property="og:image" content="https://dofren.my.id/assets/donat+logo_2.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#6B4226" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { choco: '#6B4226', chocoDark: '#4E2E18', brand: '#F5A623', brandLight: '#FBBF24', cream: '#FFF8F0' },
+          fontFamily: { sans: ['system-ui', 'Segoe UI', 'Roboto', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Dofren — Friend Donat dan Bakery",
+    "slogan": "Produsen Donat Premium dan Ekonomis Malang",
+    "address": { "@type": "PostalAddress", "addressLocality": "Malang", "addressRegion": "Jawa Timur", "addressCountry": "ID" },
+    "servesCuisine": "Donat",
+    "priceRange": "Rp5.000+"
+  }
+  </script>
+</head>
+<body class="bg-cream text-stone-800 font-sans">
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-choco/10">
+    <nav class="max-w-6xl mx-auto flex items-center gap-3 px-4 py-2.5">
+      <a href="#beranda" class="flex items-center gap-2 mr-auto">
+        <img src="assets/logo-dofren-transparent.png" alt="Logo Dofren" class="h-10 w-10 object-contain" />
+        <span class="leading-tight">
+          <span class="block font-extrabold text-choco">Dofren</span>
+          <span class="block text-[11px] text-stone-500">Friend Donat dan Bakery</span>
+        </span>
+      </a>
+      <div class="hidden md:flex items-center gap-5 text-sm font-medium">
+        <a href="#beranda" class="hover:text-choco">Beranda</a>
+        <a href="#menu" class="hover:text-choco">Menu</a>
+        <a href="#populer" class="hover:text-choco">Populer</a>
+        <a href="#pesan" class="hover:text-choco">Pesan</a>
+        <a href="#lokasi" class="hover:text-choco">Lokasi</a>
+      </div>
+      <button id="btnLogin" class="text-sm font-semibold text-choco border border-choco/30 rounded-full px-4 py-1.5 hover:bg-choco hover:text-white transition">Masuk</button>
+      <button id="btnKelola" class="hidden text-sm font-semibold text-white bg-choco rounded-full px-4 py-1.5">Kelola</button>
+      <button id="btnLogout" class="hidden text-sm text-stone-500 underline">Keluar</button>
+      <a href="#pesan" class="text-sm font-bold text-white bg-brand rounded-full px-4 py-1.5 hover:bg-brandLight hover:text-choco transition">Pesan</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO CAROUSEL ===== -->
+    <section id="beranda" class="max-w-6xl mx-auto px-4 pt-4">
+      <div class="relative rounded-2xl overflow-hidden shadow-lg">
+        <div id="carouselTrack" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth"></div>
+        <button id="carPrev" aria-label="Sebelumnya" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white rounded-full w-9 h-9">‹</button>
+        <button id="carNext" aria-label="Berikutnya" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white rounded-full w-9 h-9">›</button>
+        <div id="carouselDots" class="absolute bottom-3 left-0 right-0 flex justify-center gap-2"></div>
+      </div>
+      <p id="siteTagline" class="text-center text-sm text-stone-500 mt-3">Produsen Donat Premium dan Ekonomis Malang</p>
+    </section>
+
+    <!-- ===== TRUST BADGE ===== -->
+    <section class="max-w-6xl mx-auto px-4 mt-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-center text-sm">
+        <div class="bg-white rounded-xl p-3 shadow-sm">🍩<br /><b>Fresh Setiap Hari</b></div>
+        <div class="bg-white rounded-xl p-3 shadow-sm">💰<br /><b>Mulai Rp5rb</b></div>
+        <div class="bg-white rounded-xl p-3 shadow-sm">📦<br /><b>Paket Box Hemat</b></div>
+        <div class="bg-white rounded-xl p-3 shadow-sm">⭐<br /><b>Favorit Malang</b></div>
+      </div>
+    </section>
+
+    <!-- ===== POPULER ===== -->
+    <section id="populer" class="max-w-6xl mx-auto px-4 mt-10">
+      <h2 class="text-2xl font-extrabold text-choco">Paling Populer 🔥</h2>
+      <p class="text-sm text-stone-500 mb-4">Varian paling laris, ditandai langsung oleh owner.</p>
+      <div id="populerGrid" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+    </section>
+
+    <!-- ===== PRICELIST ===== -->
+    <section id="menu" class="max-w-6xl mx-auto px-4 mt-10">
+      <h2 class="text-2xl font-extrabold text-choco">Menu & Pricelist</h2>
+      <div class="flex flex-wrap gap-2 mt-3 mb-2">
+        <button data-cat="semua" class="filter-btn">Semua</button>
+        <button data-cat="klasik" class="filter-btn">Klasik</button>
+        <button data-cat="glaze" class="filter-btn">Glaze</button>
+        <button data-cat="premium" class="filter-btn">Premium</button>
+        <button data-cat="paket" class="filter-btn">Paket Box</button>
+        <input id="menuSearch" type="search" placeholder="Cari donat…" class="ml-auto border border-stone-300 rounded-full px-4 py-1.5 text-sm bg-white w-full sm:w-56" />
+      </div>
+      <div id="menuGrid" class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-3"></div>
+    </section>
+
+    <!-- ===== PROMO ===== -->
+    <section id="promo" class="max-w-6xl mx-auto px-4 mt-10">
+      <div class="bg-choco text-cream rounded-2xl p-6 flex flex-col md:flex-row items-center gap-4">
+        <img src="assets/logo-dofren-transparent.png" alt="Dofren" class="h-20 w-20 object-contain bg-white/10 rounded-xl p-1" />
+        <div class="flex-1 text-center md:text-left">
+          <h3 class="font-extrabold text-lg">Promo & Paket Hemat</h3>
+          <p id="promoText" class="text-sm text-cream/90">Promo: Paket Box isi 6 lebih hemat!</p>
+        </div>
+        <a href="#pesan" class="bg-brand text-choco font-bold rounded-full px-6 py-2.5 hover:bg-brandLight">Pesan Sekarang</a>
+      </div>
+    </section>
+
+    <!-- ===== PESAN / ORDER ===== -->
+    <section id="pesan" class="max-w-6xl mx-auto px-4 mt-10">
+      <h2 class="text-2xl font-extrabold text-choco">Pesan Donat</h2>
+      <p class="text-sm text-stone-500 mb-4">Pilih aplikasi favoritmu — langsung redirect ke aplikasinya.</p>
+      <div id="orderButtons" class="grid grid-cols-2 md:grid-cols-4 gap-3"></div>
+    </section>
+
+    <!-- ===== TESTIMONI ===== -->
+    <section class="max-w-6xl mx-auto px-4 mt-10">
+      <h2 class="text-2xl font-extrabold text-choco">Kata Pelanggan</h2>
+      <div class="grid md:grid-cols-3 gap-4 mt-3 text-sm">
+        <figure class="bg-white rounded-xl p-4 shadow-sm">“Donatnya empuk banget, glaze-nya melimpah!”<figcaption class="mt-2 font-bold">— Rina, Malang</figcaption></figure>
+        <figure class="bg-white rounded-xl p-4 shadow-sm">“Paket box isi 6 cocok buat hampers kantor.”<figcaption class="mt-2 font-bold">— Budi, Lowokwaru</figcaption></figure>
+        <figure class="bg-white rounded-xl p-4 shadow-sm">“Harga ekonomis, rasa premium. Langganan tiap minggu.”<figcaption class="mt-2 font-bold">— Sari, Blimbing</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ===== LOKASI ===== -->
+    <section id="lokasi" class="max-w-6xl mx-auto px-4 mt-10">
+      <h2 class="text-2xl font-extrabold text-choco">Lokasi & Jam Buka</h2>
+      <div class="grid md:grid-cols-2 gap-4 mt-3">
+        <iframe id="mapsFrame" title="Lokasi Dofren" src="https://www.google.com/maps?q=Malang,Jawa+Timur&output=embed" class="w-full h-64 rounded-xl border" loading="lazy"></iframe>
+        <div class="bg-white rounded-xl p-5 shadow-sm text-sm space-y-2">
+          <p>📍 <span id="alamatText">Malang, Jawa Timur</span></p>
+          <p>🕗 <span id="jamText">Senin–Sabtu, 08.00–20.00 WIB</span></p>
+          <div class="pt-2 flex flex-wrap gap-2">
+            <a id="routeBtn" href="#" target="_blank" rel="noopener" class="bg-choco text-white rounded-full px-5 py-2 font-bold">Rute ke Lokasi</a>
+            <a id="gmapsLink2" href="#" target="_blank" rel="noopener" class="border border-choco text-choco rounded-full px-5 py-2 font-bold">Lihat di Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ADMIN PANEL (hidden) ===== -->
+    <section id="adminPanel" class="hidden max-w-6xl mx-auto px-4 mt-10">
+      <div class="bg-white rounded-2xl shadow-lg p-5 border-t-4 border-brand">
+        <h2 class="text-xl font-extrabold text-choco">Panel Admin</h2>
+        <div class="flex gap-2 mt-3 text-sm font-bold">
+          <button data-tab="menu" class="admin-tab">Menu</button>
+          <button data-tab="carousel" class="admin-tab">Carousel</button>
+          <button data-tab="settings" class="admin-tab">Pengaturan</button>
+        </div>
+
+        <div id="tab-menu" class="admin-tabpane mt-4">
+          <div id="adminMenuTable" class="space-y-2 text-sm"></div>
+          <form id="menuForm" class="grid md:grid-cols-2 gap-2 mt-4 text-sm bg-cream rounded-xl p-4">
+            <input type="hidden" id="mId" />
+            <input id="mNama" required placeholder="Nama donat *" class="border rounded-lg px-3 py-2" />
+            <input id="mHarga" required type="number" min="0" placeholder="Harga (Rp) *" class="border rounded-lg px-3 py-2" />
+            <select id="mKategori" class="border rounded-lg px-3 py-2">
+              <option value="klasik">Klasik</option><option value="glaze">Glaze</option>
+              <option value="premium">Premium</option><option value="paket">Paket Box</option>
+            </select>
+            <input id="mFoto" type="file" accept="image/jpeg,image/png,image/webp" class="border rounded-lg px-3 py-2" />
+            <input id="mDeskripsi" placeholder="Deskripsi singkat" class="border rounded-lg px-3 py-2 md:col-span-2" />
+            <label class="flex items-center gap-2"><input id="mPopuler" type="checkbox" /> Populer</label>
+            <label class="flex items-center gap-2"><input id="mTersedia" type="checkbox" checked /> Tersedia</label>
+            <div class="md:col-span-2 flex gap-2">
+              <button class="bg-choco text-white rounded-full px-5 py-2 font-bold">Simpan</button>
+              <button type="button" id="menuReset" class="border rounded-full px-5 py-2">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="tab-carousel" class="admin-tabpane hidden mt-4">
+          <div id="adminSlideList" class="space-y-2 text-sm"></div>
+          <form id="slideForm" class="grid md:grid-cols-2 gap-2 mt-4 text-sm bg-cream rounded-xl p-4">
+            <input type="hidden" id="sId" />
+            <input id="sJudul" required placeholder="Judul slide *" class="border rounded-lg px-3 py-2" />
+            <input id="sSubjudul" placeholder="Subjudul" class="border rounded-lg px-3 py-2" />
+            <input id="sFoto" type="file" accept="image/jpeg,image/png,image/webp" class="border rounded-lg px-3 py-2" />
+            <input id="sCtaLink" placeholder="Link tombol (mis. #pesan)" class="border rounded-lg px-3 py-2" />
+            <input id="sCtaText" placeholder="Teks tombol" class="border rounded-lg px-3 py-2" />
+            <label class="flex items-center gap-2"><input id="sAktif" type="checkbox" checked /> Aktif</label>
+            <div class="md:col-span-2 flex gap-2">
+              <button class="bg-choco text-white rounded-full px-5 py-2 font-bold">Simpan</button>
+              <button type="button" id="slideReset" class="border rounded-full px-5 py-2">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="tab-settings" class="admin-tabpane hidden mt-4">
+          <form id="settingsForm" class="grid md:grid-cols-2 gap-2 text-sm bg-cream rounded-xl p-4">
+            <label>Link WA Order<input id="set_wa_order_link" class="border rounded-lg px-3 py-2 w-full" /></label>
+            <label>No WA<input id="set_wa_number" class="border rounded-lg px-3 py-2 w-full" /></label>
+            <label>Link GoFood<input id="set_gofood_url" class="border rounded-lg px-3 py-2 w-full" /></label>
+            <label>Link ShopeeFood<input id="set_shopeefood_url" class="border rounded-lg px-3 py-2 w-full" /></label>
+            <label>Link GrabFood<input id="set_grabfood_url" class="border rounded-lg px-3 py-2 w-full" /></label>
+            <label>Link Google Maps Bisnis<input id="set_gmaps_url" class="border rounded-lg px-3 py-2 w-full" /></label>
+            <label>Alamat<input id="set_alamat" class="border rounded-lg px-3 py-2 w-full" /></label>
+            <label>Jam buka<input id="set_jam_buka" class="border rounded-lg px-3 py-2 w-full" /></label>
+            <label>Instagram<input id="set_instagram" class="border rounded-lg px-3 py-2 w-full" /></label>
+            <label>TikTok<input id="set_tiktok" class="border rounded-lg px-3 py-2 w-full" /></label>
+            <label class="md:col-span-2">Teks promo<textarea id="set_promo_text" rows="2" class="border rounded-lg px-3 py-2 w-full"></textarea></label>
+            <div class="md:col-span-2"><button class="bg-choco text-white rounded-full px-5 py-2 font-bold">Simpan Pengaturan</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="mt-12 bg-choco text-cream">
+    <div class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-6 text-sm">
+      <div>
+        <div class="flex items-center gap-2">
+          <img src="assets/logo-dofren-transparent.png" alt="Logo Dofren" class="h-12 w-12 object-contain bg-white/10 rounded-xl" />
+          <div><p class="font-extrabold">Dofren</p><p class="text-cream/70 text-xs">Friend Donat dan Bakery</p></div>
+        </div>
+        <p id="footTagline" class="mt-2 text-cream/80">Produsen Donat Premium dan Ekonomis Malang</p>
+      </div>
+      <div>
+        <p class="font-bold mb-2">Ikuti Kami</p>
+        <div class="flex gap-3">
+          <a id="igLink" href="#" target="_blank" rel="noopener" class="underline">Instagram</a>
+          <a id="tiktokLink" href="#" target="_blank" rel="noopener" class="underline">TikTok</a>
+          <a id="gmapsLink" href="#" target="_blank" rel="noopener" class="underline">Google Maps Bisnis ⭐</a>
+        </div>
+        <p class="mt-3 text-cream/70">📍 <span id="footAlamat">Malang, Jawa Timur</span><br />🕗 <span id="footJam">Senin–Sabtu, 08.00–20.00 WIB</span></p>
+      </div>
+      <div>
+        <p class="font-bold mb-2">Bantuan</p>
+        <a href="#pesan" class="underline">Cara Pesan</a><br />
+        <button id="footAdmin" class="underline mt-1">Login Admin</button>
+      </div>
+    </div>
+    <p class="text-center text-xs text-cream/60 pb-5">© <span id="year"></span> Dofren — Friend Donat dan Bakery · Malang</p>
+  </footer>
+
+  <!-- Floating WA -->
+  <a id="floatWa" href="#" target="_blank" rel="noopener" aria-label="Chat WA"
+     class="fixed bottom-5 right-5 z-40 bg-[#25D366] text-white font-bold rounded-full w-14 h-14 flex items-center justify-center shadow-xl text-2xl">✆</a>
+
+  <!-- ===== LOGIN MODAL ===== -->
+  <div id="loginModal" class="hidden fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4">
+    <form id="loginForm" class="bg-white rounded-2xl p-6 w-full max-w-sm space-y-3">
+      <h3 class="font-extrabold text-choco text-lg">Login Admin</h3>
+      <input id="loginEmail" type="email" required placeholder="Email" class="border rounded-lg px-3 py-2 w-full" />
+      <input id="loginPassword" type="password" required placeholder="Password" class="border rounded-lg px-3 py-2 w-full" />
+      <p id="loginError" class="hidden text-sm text-red-600"></p>
+      <div class="flex gap-2">
+        <button class="flex-1 bg-choco text-white rounded-full py-2 font-bold">Masuk</button>
+        <button type="button" id="loginCancel" class="border rounded-full px-5 py-2">Batal</button>
+      </div>
+    </form>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

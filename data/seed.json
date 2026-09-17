@@ -1,0 +1,30 @@
+{
+  "settings": {
+    "site_name": "Dofren — Friend Donat dan Bakery",
+    "tagline": "Produsen Donat Premium dan Ekonomis Malang",
+    "wa_number": "6281234567890",
+    "wa_order_link": "https://wa.me/6281234567890?text=Halo%20Dofren%2C%20saya%20mau%20pesan%20donat",
+    "gofood_url": "",
+    "shopeefood_url": "",
+    "grabfood_url": "",
+    "gmaps_url": "",
+    "alamat": "Malang, Jawa Timur",
+    "jam_buka": "Senin–Sabtu, 08.00–20.00 WIB",
+    "instagram": "",
+    "tiktok": "",
+    "maps_embed_url": "https://www.google.com/maps?q=Malang,Jawa+Timur&output=embed",
+    "promo_text": "Promo: Paket Box isi 6 lebih hemat! Pesan via GoFood / ShopeeFood / GrabFood / WA."
+  },
+  "menus": [
+    { "id": 1, "nama": "Donat Gula Klasik", "deskripsi": "Donat kentang tabur gula halus, favorit semua umur.", "harga": 5000, "kategori": "klasik", "foto_url": "assets/donat+logo_1.png", "is_populer": true, "is_available": true, "urutan": 1 },
+    { "id": 2, "nama": "Donat Coklat Meses", "deskripsi": "Topping coklat + meses warna-warni.", "harga": 6000, "kategori": "klasik", "foto_url": "assets/donat+logo_2.png", "is_populer": false, "is_available": true, "urutan": 2 },
+    { "id": 3, "nama": "Donat Glaze Strawberry", "deskripsi": "Glaze strawberry manis dengan taburan sprinkle.", "harga": 8000, "kategori": "glaze", "foto_url": "assets/donat+logo_2.png", "is_populer": true, "is_available": true, "urutan": 3 },
+    { "id": 4, "nama": "Donat Matcha Almond", "deskripsi": "Glaze matcha premium + taburan almond.", "harga": 9000, "kategori": "glaze", "foto_url": "assets/donat+logo_1.png", "is_populer": false, "is_available": true, "urutan": 4 },
+    { "id": 5, "nama": "Donat Premium Tiramisu", "deskripsi": "Glaze tiramisu + bubuk kakao asli.", "harga": 12000, "kategori": "premium", "foto_url": "assets/donat+logo_2.png", "is_populer": true, "is_available": true, "urutan": 5 },
+    { "id": 6, "nama": "Paket Box Isi 6", "deskripsi": "Campur varian favorit dalam 1 box. Lebih hemat!", "harga": 45000, "kategori": "paket", "foto_url": "assets/donat+logo_2.png", "is_populer": true, "is_available": true, "urutan": 6 }
+  ],
+  "slides": [
+    { "id": 1, "judul": "Donat Fresh Setiap Hari", "subjudul": "Produsen Donat Premium dan Ekonomis Malang", "foto_url": "assets/donat+logo_2.png", "cta_text": "Pesan Sekarang", "cta_link": "#pesan", "urutan": 1, "is_active": true },
+    { "id": 2, "judul": "Paket Box Isi 6 Lebih Hemat", "subjudul": "Campur varian favorit, cocok untuk hampers & acara", "foto_url": "assets/donat+logo_1.png", "cta_text": "Lihat Menu", "cta_link": "#menu", "urutan": 2, "is_active": true }
+  ]
+}
