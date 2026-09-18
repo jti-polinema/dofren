@@ -4,6 +4,8 @@ import { state, esc, rupiah, renderAll } from "./app.js";
 // Panel admin: CRUD menu, carousel, settings. Aktif hanya bila state.admin.
 export function initAdmin() {
   const $ = (id) => document.getElementById(id);
+  const KEYS = ["wa_order_link", "wa_number", "gofood_url", "shopeefood_url", "grabfood_url",
+    "gmaps_url", "alamat", "jam_buka", "instagram", "tiktok", "promo_text"];
 
   document.querySelectorAll(".admin-tab").forEach((b) => {
     b.onclick = () => {
@@ -136,8 +138,6 @@ export function initAdmin() {
   };
 
   // ---------- SETTINGS ----------
-  const KEYS = ["wa_order_link", "wa_number", "gofood_url", "shopeefood_url", "grabfood_url",
-    "gmaps_url", "alamat", "jam_buka", "instagram", "tiktok", "promo_text"];
   function paintSettings() {
     KEYS.forEach((k) => { const el = $("set_" + k); if (el) el.value = state.settings[k] || ""; });
   }

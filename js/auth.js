@@ -1,4 +1,4 @@
-import { getSupabase } from "./supabase-client.js";
+import { getSupabase, getBackendError } from "./supabase-client.js";
 import { state, renderAll } from "./app.js";
 
 // Atur tampilan login/logout + panel admin. Kembalikan true bila admin.
@@ -25,7 +25,13 @@ export async function initAuth() {
     e.preventDefault();
     const err = $("loginError");
     err.classList.add("hidden");
-    if (!sb) { err.textContent = "Backend belum dihubungkan (isi js/config.js dulu)."; err.classList.remove("hidden"); return; }
+    if (!sb) {
+      err.textContent = getBackendError() === "cdn-failed"
+        ? "Gagal memuat library Supabase (cek koneksi / buka via http, bukan file://)."
+        : "Backend belum dihubungkan (isi js/config.js dulu).";
+      err.classList.remove("hidden");
+      return;
+    }
     const { error } = await sb.auth.signInWithPassword({
       email: $("loginEmail").value.trim(),
       password: $("loginPassword").value,
